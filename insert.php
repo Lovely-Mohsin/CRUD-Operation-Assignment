@@ -9,6 +9,7 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($db_conn,$sql);
     if($result){
         // Echo 'Data Inserted Successfully';
+        header("Location:show_data.php");
     }
 
 }

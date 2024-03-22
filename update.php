@@ -1,22 +1,19 @@
 <?php
-include("./Configure.php");
 
-if($_POST['submit']){
+    include("Configure.php");
 
-    $id = $_POST["id"];  
-    $name = $_POST["Name"];  
-    $email = $_POST["Email"];  
+if(isset( $_POST['submit'] )) {
 
-    $sql = "UPDATE FROM users_info";
+    $id = $_POST['id'];  
+    $name = $_POST['name'];  
+    $email = $_POST['email'];  
+
+    $sql = "UPDATE users_info SET `Name` = '$name' , `Email` = '$email' WHERE student_id = $id";
+
+    if(mysqli_query($db_conn,$sql))
+    {
+        header("Location: show_data.php");
+
+    }
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Update Data</title>
-</head>
-<body>
-    
-</body>
-</html>
