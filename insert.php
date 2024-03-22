@@ -26,13 +26,6 @@ if(isset($_POST['submit'])){
 
 </head>
 <body>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Insert Data</title>
-    </head>
-    <body>
 
       <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
         
@@ -50,9 +43,5 @@ if(isset($_POST['submit'])){
         <button type="submit" name="submit">Submit</button>
         
       </form>
-      
-    </body>
-</html>
-
 </body>
 </html>
