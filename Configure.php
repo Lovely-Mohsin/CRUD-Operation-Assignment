@@ -1,6 +1,6 @@
 <?php
 // Databes Connection
-$db_conn = mysqli_connect('localhost', 'root', '', 'school_db');
+$db_conn = mysqli_connect('localhost', 'root', '', 'Crud_demo');
 if($db_conn){
     // echo 'Database is Connected';
     }
